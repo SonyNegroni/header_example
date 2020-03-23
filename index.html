@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>Leonid Dzyhanskyi | Front-End Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;display=swap&amp;display=fallback"
+        rel="stylesheet" defer="defer" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600,700&amp;display=swap&amp;display=fallback"
+        rel="stylesheet" defer="defer" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<header class="header">
+    <div class="header__logo"><img src="images/logo.png" alt="Logo" />
+    </div>
+
+    <nav class="menu">
+        <div class="menu__button" role="button" tabindex="0" id="menubutton" aria-haspopup="true" data-active="inactive"
+            aria-labelledby="menubutton" aria-controls="menu" title="Show/Hide menu">
+        </div>
+
+        <ul class="menu__list" id="menu" role="menu" tabindex="-1">
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="#skills" title="Scrole to My Skills"
+                    data-from="skills">My Skills</a>
+            </li>
+
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="#life" title="Scrole to My Life"
+                    data-from="life">My Life</a>
+            </li>
+
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="#hobbies" title="Scrole to My Hobbies"
+                    data-from="hobbies">My Hobbies</a>
+            </li>
+
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="#contacts" title="Scrole to Contacts"
+                    data-from="contacts">Contacts</a>
+            </li>
+
+            <li class="menu__item" role="menuitem"><a class="menu__link" href="#portfolio" title="Scrole to Portfolio"
+                    data-from="portfolio">Portfolio</a>
+            </li>
+        </ul>
+
+        <a href="javascript:void(0);" class="menu__button" onclick="myFunction()">
+        </a>
+
+    </nav>
+
+</header>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    let admin, name;
+
+    name = "John";
+
+    admin = name;
+
+    alert(admin);
+
+</script>
+
+</html>
